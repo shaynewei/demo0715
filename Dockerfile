@@ -1,5 +1,5 @@
 FROM java:8
 VOLUME /tmp
-ADD demo0721/target/demo0715*.jar /demo0715.jar
+ADD target/demo0715*.jar /demo0715.jar
 EXPOSE 8088
 ENTRYPOINT ["java","-jar","/demo0715.jar"]
